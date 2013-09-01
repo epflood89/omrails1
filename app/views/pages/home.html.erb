@@ -1,15 +1,52 @@
-
+<% if user_signed_in? %>
+  <h1> Welcome to Flood App!</h1>
+  <% else %>
 <div class="hero-unit">
     <h1>Welcome to Capitl! </h1>
     <p>to <%= link_to 'Flood App',  "http://onemonthrails.com" %>
      </p>
 
-    <p> <%= link_to 'Sign up now!',  "#" , class: "btn btn-large btn-primary" %> </p>
+    <p> <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %> </p>
 </div>
+<% end %>
+
+<!--
+<div class="content-wrap page-wrap">
+    <div class="home">
+  <header class="hero-unit">
+    <div style="" class="header-unit-cta">
+      <h1>It's your neighborhood. Make an impact</h1>
+      <div class="hero-unit-tagline">Smarter, safer, and connected communities are using PublicStuff.</div>
+      <div class="row-fluid">
+        <div class="span6">
+          <a href="#undefined" data-attribute="email-sign-up" data-track="hero-sign-up">
+            <div style="font-size: 1.6rem;" class="input-block-level btn btn-primary btn-large">
+              <img style="margin-right: 8px;" class="gov-icon" src="/images/static/how-it-works-community.png" alt="information icon">
+              Residents
+            </div>
+          </a>
+        </div>
+        <div class="span6">
+          <a href="/tour">
+            <div style="font-size: 1.6rem;" class="input-block-level btn btn-info btn-large">
+              <img style="margin-right: 8px;" class="gov-icon" src="/images/static/how-it-works-gov.png" alt="government icon">
+              Government
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="homepage-splash-img">
+      <span></span> 
+    </div>
+  </header>
+</header>
+</div>
+-->
 
 
 <!-- Carousel
-    ================================================== -->
+   
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
@@ -45,4 +82,5 @@
       </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
+    </div> -->
+
