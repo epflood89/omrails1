@@ -5,6 +5,8 @@ gem 'rails', '4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
+gem 'simple_form'
+gem 'protected_attributes'
 
 group :production do
     gem 'pg'
